@@ -42,20 +42,12 @@
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4" ng-repeat="video in playList.videos">
-        <div class="thumbnail">
-           <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" ng-src="{{ test(video.snippet.resourceId.videoId) }}" allowfullscreen=""></iframe>
-          </div>
-          <div class="caption" style="overflow:hidden; text-overflow:ellipsis; ">
-            <h3>{{ video.snippet.title }}</h3>
-            <p>{{ video.snippet.description }}</p>
-          </div>
-        </div>
+        <video-thumbnail></video-thumbnail>
       </div>
+      <!-- Modal -->
+      <video-detail></video-detail>
     </div>
-
     <hr>
-
     <footer>
       <p>&copy; Mr.Tint 2015</p>
     </footer>

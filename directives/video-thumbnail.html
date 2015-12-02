@@ -1,0 +1,8 @@
+<div class="thumbnail">
+	<div class="embed-responsive embed-responsive-4by3">
+		<img class="img-responsive" ng-src="{{ video.snippet.thumbnails.standard.url }}" alt="{{ video.snippet.title }}">
+	</div>
+	<div class="caption video-block">
+		<h4 class="link-button" ng-click="viewDetails($index)">{{ video.snippet.title }}</h4>
+	</div>
+</div>
